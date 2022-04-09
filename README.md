@@ -2,8 +2,8 @@
 
 Car 4You is a E-Commerce project made without frontend framework.
 
-  Webpack
-  Jest
+- Webpack
+- Jest
 
 ## Installation
 
