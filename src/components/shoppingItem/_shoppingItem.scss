@@ -1,0 +1,48 @@
+section {
+  padding-bottom: 40px;
+}
+
+section.selected {
+
+  button {
+    color: $color-gray999;
+  }
+
+  .item-value {
+    background-color: $color-value-selected;
+    color: $color-white;
+  }
+}
+
+.item-title{
+  color: $color-gray333;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.item-value {
+  color: $color-gray333;
+  background-color: $color-white;
+  font-size: 20px;
+  padding: 10px 0 10px 10px;
+  box-shadow: 0 9px 0px 0px $color-white, 0 -9px 0px 0px $color-white, 1px 0 10px -8px $color-gray333, -1px 0 10px -8px $color-gray333;
+  margin-top: -5px;
+}
+
+.button-item {
+  background-color: $color-button;
+  width: 100%;
+  color: $color-white;
+  font-size: 16px;
+  border: none;
+  height: 35px;
+  cursor: pointer;
+}
+
+button.selected {
+  color: $color-gray999;
+}
+
+p.selected {
+  background-color: $color-value-selected;
+}
