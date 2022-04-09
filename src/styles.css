@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+}
+
+body,
+html {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+main {
+  width: 918px;
+  margin: auto;
+}
+
+footer {
+  width: 918px;
+  margin: auto;
+  display: none;
+  padding-bottom: 20px;
+}
+
+footer p {
+  color: #999;
+  font-size: 12px;
+}
+
+.full-width {
+  height: 80px;
+  background-color: #000;
+  display: flex;
+}
+
+.full-width .nav-principal {
+  width: 1024px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.full-width p {
+  font-size: 18px;
+  color: #FFF;
+}
+
+.logo {
+  padding-left: 30px;
+}
+
+.name {
+  padding-left: 50px;
+}
+
+.filter-hidden {
+  visibility: hidden;
+}
+
+.title-filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 30px 0;
+}
+
+.title-filter h2 {
+  font-size: 24px;
+  color: #333;
+  font-weight: normal;
+}
+
+.title-filter input {
+  border: 1px solid #999;
+  font-size: 14px;
+  color: #333;
+  width: 220px;
+  height: 35px;
+}
+
+#shopping-itens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#alert-filter {
+  position: relative;
+  height: 350px;
+}
+
+#alert-width {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  #alert-width {
+    display: block;
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  #alert-width p {
+    color: #FFF;
+  }
+  header {
+    display: none !important;
+  }
+  main {
+    display: none !important;
+  }
+  footer {
+    display: none !important;
+  }
+}
+
+section {
+  padding-bottom: 40px;
+}
+
+section.selected button {
+  color: #999;
+}
+
+section.selected .item-value {
+  background-color: #2a2a2a;
+  color: #FFF;
+}
+
+.item-title {
+  color: #333;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.item-value {
+  color: #333;
+  background-color: #FFF;
+  font-size: 20px;
+  padding: 10px 0 10px 10px;
+  box-shadow: 0 9px 0px 0px #FFF, 0 -9px 0px 0px #FFF, 1px 0 10px -8px #333, -1px 0 10px -8px #333;
+  margin-top: -5px;
+}
+
+.button-item {
+  background-color: #3c3c3c;
+  width: 100%;
+  color: #FFF;
+  font-size: 16px;
+  border: none;
+  height: 35px;
+  cursor: pointer;
+}
+
+button.selected {
+  color: #999;
+}
+
+p.selected {
+  background-color: #2a2a2a;
+}
+
+.shopping-bag {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0 30px 0 10px;
+}

@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+
+body,
+html {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+main {
+  width: 918px;
+  margin: auto;
+}
+
+footer {
+  width: 918px;
+  margin: auto;
+  display: none;
+  padding-bottom: 20px;
+  p {
+    color: $color-gray999;
+    font-size: 12px;
+  }
+}
