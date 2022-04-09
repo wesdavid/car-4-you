@@ -43,6 +43,7 @@ var addTotalValueBag = (price, totalValueBag, elementValue) => {
 
 var removeTotalValueBag = (price, totalValueBag, elementValue) => {
   totalValueBag = parseFloat(totalValueBag) - parseFloat(price.amount);
+  console.log(totalValueBag);
   elementValue.textContent =  utils.formatPrice(price, totalValueBag);
   elementValue.setAttribute('value', totalValueBag);
 }

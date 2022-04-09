@@ -39,7 +39,7 @@ function createShoppingItemComponent(car, index) {
         htmlParsed.getElementById(`button${index}`).addEventListener('click', () => eventShoppingBag(index, car.price));
         htmlParsed.querySelector('.item-title').innerHTML = `${car.modelClass} ${car.version}`;
         htmlParsed.querySelector('.item-image').src = car.imagePath;
-        htmlParsed.querySelector('.item-value').innerHTML = utils.formatPrice(car.price);
+        htmlParsed.querySelector('.item-value').innerHTML = utils.formatPrice(car.price, car.price.amount);
 
         const template = htmlParsed.body.querySelector('section')
         if (template !== null) {

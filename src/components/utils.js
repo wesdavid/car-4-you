@@ -17,12 +17,10 @@ function displayFooter() {
 }
 
 function formatPrice(price, total = 0) {
-  const valueToFormat = total != 0 ? total : price.amount;
-
   return Intl.NumberFormat(price.locale, {
     style: "currency",
     currency: price.currency,
-  }).format(valueToFormat);
+  }).format(total);
 }
 
 export { changeInnerHTML, toggleSelectedClass, displayFilter, displayFooter, formatPrice }
